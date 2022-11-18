@@ -1,38 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  background-color: rgba(1, 24, 50, 0.3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.headerContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  padding: 18px 0 18px 0;
+}
+
+.headerLogo {
+  text-align: left;
+}
+
+.headerNav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  /* width: 550px; */
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenuItem a {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  list-style: none;
+  margin-right: 16px;
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 29px;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+}
+
+.headerMenuItem a:hover {
+  color: #000;
+  padding: 6px 16px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 29px;
+  transition: all 0.5s ease 0s;
+}
+
+.headerMenuItemActive a {
+  color: #000;
+  padding: 6px 16px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 29px;
+}
+
+.headerNavItem {
+  margin-right: 65px;
+}
+
+.headerSocial {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBurger {
+  position: relative;
+}
+
+.burgerItem {
+  border: 2px solid #fff;
+  text-align: right;
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+
+  border-radius: 25px;
+}
+
+.burger1 {
+  width: 10px;
+  top: -7px;
+}
+
+.burger2 {
+  width: 16px;
+
+}
+
+.burger3 {
+  width: 6px;
+  top: 6px;
+}
+
+.headerLanguage {
+  display: flex;
+}
+
+.headerLanguage h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+/* Первая секция WELCOME */
+
+.welcome {
+  background-image: url('./img/WelcomeBackground.png');
+  width: 100%;
+  height: 100%;
+}
+
+.welcomeContainer {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.welcomeTitle {
+  max-width: 868px;
+  max-height: 222px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.welcomeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.welcomeItemImage img {
+  border-radius: 50%;
+  border: 5px solid rgba(0, 209, 255, .2);
+  transition: all 0.5s ease 0s;
+}
+
+.welcomeItemImage img:hover {
+  box-shadow: 0px 0px 20px rgba(0, 209, 255, 1);
+  transition: all 0.5s ease 0s;
+}
+
+.welcomeItemText {
+  height: 38px;
+}
+
+.welcomeItemTitle {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.welcomeItemDescription {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.headerCart {
+  display: flex;
+  align-items: center;
+}
+
+.headerCartText {
+  margin-left: 10px;
+}
+
+.headerCartText h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.headerCartText h3 {
+  font-size: 9px;
+  font-weight: 500;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+/* Вторая секция INFO */
+
+.info {
+  background: url('../src/img/InfoBackground.png') no-repeat;
+}
+
+.infoContainer {
+  position: relative;
+}
+
+.infoWrapper {
+  display: flex;
+}
+
+.infoText {
+  text-align: left;
+}
+
+.infoAdvantagesTitle {
+  background-image: url('https://www.advantour.com/img/kazakhstan/astana/nur-sultan-history3.jpg');
+  background-size: cover;
+  white-space: nowrap;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.infoText {
+  width: 586px;
+}
+
+.infoTitle h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 46px;
+}
+
+.infoTitle p span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.infoAdvantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoAdvantages__item h1 {
+  font-size: 50px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: left;
+}
+
+.infoAdvantages__item h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.infoLogo img {
+  border-radius: 50%;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+}
+
+/* Третья секция REASONS */
+
+.reasons {
+  color: #000;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.reasonsContainer {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.reasonsTitle {
+  display: flex;
+  align-items: center;
+  width: 678px;
+  margin-bottom: 30px;
+}
+
+.reasonsTitleText {
+  margin-right: 50px;
+}
+
+.reasonsTitleText h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.reasonsTitleText h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-block-start: 0px;
+}
+
+.reasonsMore {
+  width: 117px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.reasonsMore h3 {
+  color: #03B0CD;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 18px;
+}
+
+.reasonsItemWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.reasonsItemWrapper:nth-child(2) {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reasonsItemWrapper .reasonsItemText h1:nth-child(2) {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin-block-start: 0px;
+}
+
+.reasonsItem {
+  width: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.reasonsItemTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.reasonsItemDescription {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Четвертая секция Slider */
+
+.slider {
+  margin-bottom: 100px;
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.SliderItem {
+  position: relative;
+}
+
+.sliderItemImage {
+  position: absolute;
+  max-width: 100%;
+  height: 768px;
+}
+
+.sliderItemImage img {
+  width: 100%;
+  height: 100%;
 }
