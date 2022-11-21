@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  background-color: rgba(1, 24, 50, 0.3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.headerContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  padding: 18px 0 18px 0;
+}
+
+.headerLogo {
+  text-align: left;
+}
+
+.headerNav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  /* width: 550px; */
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenuItem a {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  list-style: none;
+  margin-right: 16px;
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 29px;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+}
+
+.headerMenuItem a:hover {
+  color: #000;
+  padding: 6px 16px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 29px;
+  transition: all 0.5s ease 0s;
+}
+
+.headerMenuItemActive a {
+  color: #000;
+  padding: 6px 16px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 29px;
+}
+
+.headerNavItem {
+  margin-right: 65px;
+}
+
+.headerSocial {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBurger {
+  width: 25px;
+  height: 25px;
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+.headerBurger span {
+  position: absolute;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  width: 16px;
+  height: 0px;
+  top: 11px;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.headerBurger:before {
+  top: 0;
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 10px;
+  height: 0px;
+  right: 0;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.headerBurger:after {
+  bottom: 0;
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 6px;
+  height: 0px;
+  right: 0;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.headerLanguage {
+  display: flex;
+}
+
+.headerLanguage h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+/* Первая секция WELCOME */
+
+.welcome {
+  background-image: url('./img/WelcomeBackground.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.welcomeContainer {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.welcomeTitle {
+  max-width: 868px;
+  max-height: 222px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.welcomeWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.welcomeItemImage img {
+  border-radius: 50%;
+  border: 5px solid rgba(0, 209, 255, .2);
+  transition: all 0.5s ease 0s;
+}
+
+.welcomeItemImage img:hover {
+  box-shadow: 0px 0px 20px rgba(0, 209, 255, 1);
+  transition: all 0.5s ease 0s;
+}
+
+.welcomeItemText {
+  height: 38px;
+}
+
+.welcomeItemTitle {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.welcomeItemDescription {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.headerCart {
+  display: flex;
+  align-items: center;
+}
+
+.headerCartText {
+  margin-left: 10px;
+}
+
+.headerCartText h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.headerCartText h3 {
+  font-size: 9px;
+  font-weight: 500;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+/* Вторая секция INFO */
+
+.info {
+  background: url('../src/img/InfoBackground.png') no-repeat;
+}
+
+.infoContainer {
+  position: relative;
+}
+
+.infoWrapper {
+  display: flex;
+}
+
+.infoText {
+  text-align: left;
+}
+
+.infoAdvantagesTitle {
+  background-image: url('https://www.advantour.com/img/kazakhstan/astana/nur-sultan-history3.jpg');
+  background-size: cover;
+  white-space: nowrap;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.infoText {
+  width: 586px;
+}
+
+.infoTitle h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 46px;
+}
+
+.infoTitle p span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.infoAdvantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoAdvantages__item h1 {
+  font-size: 50px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: left;
+}
+
+.infoAdvantages__item h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.infoLogo img {
+  border-radius: 50%;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 6;
+}
+
+/* Третья секция REASONS */
+
+.reasons {
+  color: #000;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.reasonsContainer {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.reasonsTitle {
+  display: flex;
+  align-items: center;
+  width: 678px;
+  margin-bottom: 30px;
+}
+
+.reasonsTitleText {
+  margin-right: 50px;
+}
+
+.reasonsTitleText h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.reasonsTitleText h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-block-start: 0px;
+}
+
+.reasonsMore {
+  width: 117px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.reasonsMore h3 {
+  color: #03B0CD;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 18px;
+}
+
+.reasonsItemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasonsItemWrapper:nth-child(2) {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.reasonsItemWrapper .reasonsItemText h1:nth-child(2) {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin-block-start: 0px;
+}
+
+.reasonsItem {
+  width: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.reasonsItemTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.reasonsItemDescription {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Четвертая секция Slider */
+
+.swiper {
+  color: #000;
+  width: 100%;
+  height: 768px;
+  position: relative;
+}
+
+.sliderContainer {
+  height: 100%;
+}
+
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+.SliderItem {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sliderItemImage {
+  position: absolute;
+  min-width: 100%;
+  height: 768px;
+}
+
+.sliderItemImage img {
+  width: 100% !important;
+  height: 100%;
+  z-index: 3;
+}
+
+.swiper {
+  color: #000;
+  text-align: left;
+}
+
+.swiperHeight {
+  height: 768px;
+}
+
+.sliderItemTextWrapper {
+  position: absolute;
+  height: 100%;
+  width: 38%;
+  left: 15%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sliderItemText {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sliderItemSubtitle {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.sliderItemTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.sliderItemDescription {
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.sliderItemButton {
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+  border: 1.5px solid #fff;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  justify-content: space-between;
+  left: 90% !important;
+  top: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+  width: 74px !important;
+  height: 74px !important;
+  background-color: #000 !important;
+  border-radius: 50% !important;
+  border: 5px solid rgba(0, 0, 0, .12) !important;
+}
+
+.swiper-pagination-bullet img {
+  display: inline-block !important;
+  padding: 20px 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #03B0CD !important;
+}
+
+@media (max-width: 391px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .infoLogo {
+    display: none;
+  }
+
+  .headerBurger {
+    display: block;
+  }
+
+  .headerCart,
+  .headerNav,
+  .headerSocial {
+    display: none;
+  }
+
+  .headerMenu {
+    flex-direction: column;
+  }
+
+  .welcomeTitleImage {
+    max-width: 100%;
+  }
+
+  .welcomeWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding-bottom: 100px;
+  }
+
+  .welcomeItemTitle {
+    font-size: 14px;
+  }
+
+  .welcomeItemDescription {
+    font-size: 12px;
+  }
+
+  .infoWrapper {
+    position: relative;
+  }
+
+  .infoImage {
+    max-width: 300px;
+    max-height: 150px;
+    position: absolute;
+    bottom: 70px;
+    left: -100px;
+  }
+
+  .infoImage img {
+    max-width: 100%;
+  }
+
+  .infoTitle h1 {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .infoTitle p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .infoAdvantages__wrapper {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .infoAdvantages__item h1 {
+    text-align: right;
+  }
+
+  .infoAdvantages__item h2 {
+    margin-block-start: 0px;
+  }
+
+  .reasonsTitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reasonsTitleText h1 {
+    font-size: 50px;
+  }
+
+  .reasonsTitleText h2 {
+    font-size: 18px;
+  }
+
+  .reasonsItem {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reasonsItemWrapper:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .reasonsItemImage img {
+    width: 100%;
+  }
+
+  .swiper {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .swiper-wrapper {
+    flex-direction: row;
+  }
+
+  .swiper-pagination {
+    flex-direction: row !important;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    left: 0% !important;
+    top: 520px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 38px !important;
+    height: 38px !important;
+    border: 3px solid rgba(0, 0, 0, .12) !important;
+  }
+
+  .swiper-pagination-bullet img {
+    padding: 10px 0;
+    width: 60% !important;
+  }
+
+  .sliderItemTextWrapper {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .sliderItemText,
+  .sliderItemTextWrapper {
+    width: 100%;
+    left: 20px;
+  }
+
+  .sliderItemSubtitle {
+    font-size: 25px;
+  }
+
+  .sliderItemTitle {
+    font-size: 30px;
+  }
+
+  .sliderItemDescription {
+    font-size: 16px;
+  }
+
+  .swiperHeight {
+    height: 436px;
+  }
+
+  .sliderItemImage img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .sliderItemTextWrapper {
+    top: 0px;
+    left: 3%;
+  }
+}
